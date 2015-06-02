@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="divya.example.com.intent" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home"
+        android:theme="@style/AppTheme"
+        android:label="intent">
+        <activity
+            android:name=".MainActivity"
+            android:label="intent"
+            android:theme="@style/AppTheme"
+            android:icon="@drawable/home"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".date"
+            android:label="@string/title_activity_date"
+            android:uiOptions="splitActionBarWhenNarrow" >
+>
+        </activity>
+
+        <meta-data
+            android:name="android.support.UI_OPTIONS"
+            android:value="splitActionBarWhenNarrow" />
+
+        <activity
+            android:name=".Keyboard"
+            android:label="@string/title_activity_keyboard"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".list"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+
+        </activity>
+    </application>
+
+</manifest>

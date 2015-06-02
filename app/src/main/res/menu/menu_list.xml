@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="divya.example.com.intent.list">
+    <item android:id="@+id/list"
+        android:title="@string/list"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+    <item android:id="@+id/keys"
+        android:title="@string/keys"
+        android:orderInCategory="2"
+        app:showAsAction="always"/>
+    <item android:id="@+id/dates"
+        android:title="@string/Date"
+        android:orderInCategory="3"
+        app:showAsAction="always"/>
+
+</menu>
